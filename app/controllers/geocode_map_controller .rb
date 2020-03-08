@@ -5,7 +5,7 @@ class ConfirmRouteController < ApplicationController
     location = URI.encode(params[:location])
     response = RestClient::Request.execute(
       method: :get,
-      url: "https://api.mapbox.com/geocoding/v5/mapbox.places/#{location}.json?access_token=#{ENV['MAPBOX']}",
+      "https://maps.googleapis.com/maps/api/geocode/json?address=#{location}&key=#{ENV['GOOGLE_PLACES_KEY']}",
       )
     render json: response
   end
