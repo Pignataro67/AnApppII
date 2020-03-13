@@ -13,3 +13,11 @@ export default class Card extends Component {
   <Route exact path="/confirm_route" component={ConfirmRouteContainer}/>
   <Route exact path="/results" component={ResultsContainer}/>
 </Switch>
+
+import React from 'react';
+
+const Card = (props) => {
+  return <div>{props.children}</div>
+}
+
+export default Card;
