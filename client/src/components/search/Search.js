@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import SearchInput from "./SearchInput";
 import Button from "../Button";
 import Card from "../Card";
